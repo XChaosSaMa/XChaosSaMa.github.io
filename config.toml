@@ -1,0 +1,40 @@
+
+baseURL = "https://github.com/XChaosSaMa/XChaosSaMa.github.io.git"
+languageCode = "en-us"
+title = "ChaosSec Labs"
+theme = "terminal"
+
+[params]
+  contentTypeName = "posts"
+  themeColor = "green"
+  showMenuItems = 4
+  fullWidthTheme = false
+  centerTheme = true
+  showLastUpdated = true
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Writeups"
+  url = "/writeups/"
+  weight = 2
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 3
+
+[[menu.main]]
+  name = "Tools"
+  url = "/tools/"
+  weight = 4
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[markup.goldmark.renderer]
+unsafe = true
